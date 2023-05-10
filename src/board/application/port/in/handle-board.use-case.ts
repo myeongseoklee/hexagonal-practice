@@ -1,4 +1,4 @@
-import { BoardId } from '../../entity/board.entity';
+import { BoardId } from '../../../domain/board.entity';
 import { BoardRes } from './dto/board-res.dto';
 import { CreateBoardReq } from './dto/create-board-req.dto';
 import { UpdateBoardBodyReq } from './dto/update-board-body-req.dto';

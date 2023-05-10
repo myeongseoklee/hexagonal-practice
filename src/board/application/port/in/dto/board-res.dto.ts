@@ -1,4 +1,4 @@
-import { BoardEntity, BoardId } from '../../../entity/board.entity';
+import { BoardEntity, BoardId } from '../../../../domain/board.entity';
 import { Exclude, Expose } from 'class-transformer';
 
 export class BoardRes {

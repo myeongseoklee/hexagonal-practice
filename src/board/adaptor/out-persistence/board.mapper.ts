@@ -1,5 +1,5 @@
-import { BoardWindowEntity } from './../../domain/entity/board-window.entity';
-import { BoardEntity } from './../../domain/entity/board.entity';
+import { BoardWindowEntity } from '../../domain/board-window.entity';
+import { BoardEntity } from '../../domain/board.entity';
 import { BoardOrmEntity } from './board.orm-entity';
 
 export class BoardMapper {

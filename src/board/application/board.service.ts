@@ -1,14 +1,14 @@
-import { BoardRes } from '../port/in/dto/board-res.dto';
-import { GetBoardsUseCase } from '../port/in/get-boards.use-case';
-import { GetBoardsCommand } from '../port/in/dto/get-boards.command';
-import { GetBoardsPort } from '../port/out/get-boards.port';
-import { GetBoardsRes } from '../port/in/dto/get-boards-res.dto';
-import { GetBoardPort } from '../port/out/get-board.port';
-import { BoardId } from '../entity/board.entity';
-import { HandleBoardPort } from '../port/out/handle-board.port';
-import { CreateBoardReq } from '../port/in/dto/create-board-req.dto';
-import { HandleBoardUseCase } from '../port/in/handle-board.use-case';
-import { UpdateBoardReq } from '../port/in/dto/update-board-req.dto';
+import { BoardRes } from './port/in/dto/board-res.dto';
+import { GetBoardsUseCase } from './port/in/get-boards.use-case';
+import { GetBoardsCommand } from './port/in/dto/get-boards.command';
+import { GetBoardsPort } from './port/out/get-boards.port';
+import { GetBoardsRes } from './port/in/dto/get-boards-res.dto';
+import { GetBoardPort } from './port/out/get-board.port';
+import { BoardId } from '../domain/board.entity';
+import { HandleBoardPort } from './port/out/handle-board.port';
+import { CreateBoardReq } from './port/in/dto/create-board-req.dto';
+import { HandleBoardUseCase } from './port/in/handle-board.use-case';
+import { UpdateBoardReq } from './port/in/dto/update-board-req.dto';
 import { NotFoundException } from '@nestjs/common';
 
 export class BoardService implements GetBoardsUseCase, HandleBoardUseCase {

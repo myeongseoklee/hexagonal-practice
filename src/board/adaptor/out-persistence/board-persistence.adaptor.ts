@@ -1,8 +1,8 @@
-import { HandleBoardPort } from './../../domain/port/out/handle-board.port';
-import { GetBoardPort } from './../../domain/port/out/get-board.port';
-import { BoardEntity, BoardId } from './../../domain/entity/board.entity';
-import { GetBoardsCommand } from '../../domain/port/in/dto/get-boards.command';
-import { GetBoardsPort } from '../../domain/port/out/get-boards.port';
+import { HandleBoardPort } from '../../application/port/out/handle-board.port';
+import { GetBoardPort } from '../../application/port/out/get-board.port';
+import { BoardEntity, BoardId } from '../../domain/board.entity';
+import { GetBoardsCommand } from '../../application/port/in/dto/get-boards.command';
+import { GetBoardsPort } from '../../application/port/out/get-boards.port';
 import { InjectRepository } from '@nestjs/typeorm';
 import { BoardOrmEntity } from './board.orm-entity';
 import { FindManyOptions, Repository } from 'typeorm';

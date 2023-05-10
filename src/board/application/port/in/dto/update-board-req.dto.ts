@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Expose } from 'class-transformer';
-import { BoardEntity } from './../../../entity/board.entity';
+import { BoardEntity } from '../../../../domain/board.entity';
 import { IsNotEmpty, IsNumber } from 'class-validator';
 import { UpdateBoardBodyReq } from './update-board-body-req.dto';
 

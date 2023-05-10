@@ -2,20 +2,20 @@ import { RolesGuard } from './../../../auth/guard/role.guard';
 import { Role } from '../../../auth/enum/role.enum';
 import { Roles } from '../../../auth/decorator/role.decorator';
 import { AuthGuard } from '../../../auth/guard/auth.guard';
-import { UpdateBoardValidationPipe } from '../../domain/port/in/pipe/update-board-validation.pipe';
-import { UpdateBoardBodyReq } from './../../domain/port/in/dto/update-board-body-req.dto';
+import { UpdateBoardValidationPipe } from '../../application/port/in/pipe/update-board-validation.pipe';
+import { UpdateBoardBodyReq } from '../../application/port/in/dto/update-board-body-req.dto';
 import {
   HandleBoardUseCase,
   HandleBoardUseCaseSymbol,
-} from '../../domain/port/in/handle-board.use-case';
-import { BoardId } from '../../domain/entity/board.entity';
-import { CreateBoardReq } from '../../domain/port/in/dto/create-board-req.dto';
+} from '../../application/port/in/handle-board.use-case';
+import { BoardId } from '../../domain/board.entity';
+import { CreateBoardReq } from '../../application/port/in/dto/create-board-req.dto';
 import { ResponseEntity } from '../../../common/res/response.entity';
-import { GetBoardsCommand } from '../../domain/port/in/dto/get-boards.command';
+import { GetBoardsCommand } from '../../application/port/in/dto/get-boards.command';
 import {
   GetBoardsUseCase,
   GetBoardsUseCaseSymbol,
-} from '../../domain/port/in/get-boards.use-case';
+} from '../../application/port/in/get-boards.use-case';
 import {
   Body,
   Controller,
