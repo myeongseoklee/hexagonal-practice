@@ -23,30 +23,29 @@
 │   │       ├── board-persistence.module.ts
 │   │       ├── board.mapper.ts
 │   │       └── board.orm-entity.ts
+│   ├── application
+│   │   ├── board.service.ts
+│   │   └── port
+│   │       ├── in
+│   │       │   ├── dto
+│   │       │   │   ├── board-res.dto.ts
+│   │       │   │   ├── create-board-req.dto.ts
+│   │       │   │   ├── get-boards-res.dto.ts
+│   │       │   │   ├── get-boards.command.ts
+│   │       │   │   ├── update-board-body-req.dto.ts
+│   │       │   │   └── update-board-req.dto.ts
+│   │       │   ├── get-boards.use-case.ts
+│   │       │   ├── handle-board.use-case.ts
+│   │       │   └── pipe
+│   │       │       └── update-board-validation.pipe.ts
+│   │       └── out
+│   │           ├── get-board.port.ts
+│   │           ├── get-boards.port.ts
+│   │           └── handle-board.port.ts
 │   ├── board.module.ts
 │   └── domain
-│       ├── entity
-│       │   ├── board-window.entity.ts
-│       │   └── board.entity.ts
-│       ├── port
-│       │   ├── in
-│       │   │   ├── dto
-│       │   │   │   ├── board-res.dto.ts
-│       │   │   │   ├── create-board-req.dto.ts
-│       │   │   │   ├── get-boards-res.dto.ts
-│       │   │   │   ├── get-boards.command.ts
-│       │   │   │   ├── update-board-body-req.dto.ts
-│       │   │   │   └── update-board-req.dto.ts
-│       │   │   ├── get-boards.use-case.ts
-│       │   │   ├── handle-board.use-case.ts
-│       │   │   └── pipe
-│       │   │       └── update-board-validation.pipe.ts
-│       │   └── out
-│       │       ├── get-board.port.ts
-│       │       ├── get-boards.port.ts
-│       │       └── handle-board.port.ts
-│       └── service
-│           └── board.service.ts
+│       ├── board-window.entity.ts
+│       └── board.entity.ts
 ├── common
 │   ├── config
 │   │   ├── global-config.ts
